@@ -28,6 +28,6 @@ class Client extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('clients');
     }
 }

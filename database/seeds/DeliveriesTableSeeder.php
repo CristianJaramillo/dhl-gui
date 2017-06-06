@@ -18,7 +18,21 @@ class DeliveriesTableSeeder extends Seeder
             	'status' => 'WAIT',
                 'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
                 'updated_at' => \Carbon\Carbon::now()->toDateTimeString(),
-        	]
+        	],
+            [
+                'client_id' => 1,
+                'delivery_person_id' => 1,
+                'status' => 'DELIVERED',
+                'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                'updated_at' => \Carbon\Carbon::now()->toDateTimeString(),
+            ],
+            [
+                'client_id' => 1,
+                'delivery_person_id' => 1,
+                'status' => 'CONFIRMED',
+                'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
+                'updated_at' => \Carbon\Carbon::now()->toDateTimeString(),
+            ]
         ]);
     }
 }
